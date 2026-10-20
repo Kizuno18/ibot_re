@@ -1,0 +1,124 @@
+{
+ "summary": {
+  "unchanged": 3,
+  "changed": 3,
+  "added": 5,
+  "removed": 10,
+  "unknown": 0
+ },
+ "matching": {
+  "exact_il_signature": 0,
+  "exact_signature": 3,
+  "structural_method_shape": 0,
+  "field_signature": 3,
+  "ambiguous": 0,
+  "unmatched": 15
+ },
+ "items": [
+  {
+   "status": "changed",
+   "type": "Launcher.Properties.Settings",
+   "name": ".ctor"
+  },
+  {
+   "status": "changed",
+   "type": "Launcher.Properties.Settings",
+   "name": ".cctor"
+  },
+  {
+   "status": "changed",
+   "type": "Launcher.Properties.Resources",
+   "name": ".ctor"
+  },
+  {
+   "status": "removed",
+   "type": "DotfuscatorAttribute",
+   "name": ".ctor"
+  },
+  {
+   "status": "removed",
+   "type": "DotfuscatorAttribute",
+   "name": "a"
+  },
+  {
+   "status": "removed",
+   "type": "DotfuscatorAttribute",
+   "name": "c"
+  },
+  {
+   "status": "removed",
+   "type": "Launcher.Properties.Settings",
+   "name": "a"
+  },
+  {
+   "status": "removed",
+   "type": "Launcher.Properties.Resources",
+   "name": "b"
+  },
+  {
+   "status": "removed",
+   "type": "Launcher.Properties.Resources",
+   "name": "a"
+  },
+  {
+   "status": "removed",
+   "type": "Launcher.Properties.Resources",
+   "name": "a"
+  },
+  {
+   "status": "removed",
+   "type": "a",
+   "name": "a"
+  },
+  {
+   "status": "added",
+   "type": "Launcher.Program",
+   "name": "Main"
+  },
+  {
+   "status": "added",
+   "type": "Launcher.Properties.Resources",
+   "name": "get_ResourceManager"
+  },
+  {
+   "status": "added",
+   "type": "Launcher.Properties.Resources",
+   "name": "get_Culture"
+  },
+  {
+   "status": "added",
+   "type": "Launcher.Properties.Resources",
+   "name": "set_Culture"
+  },
+  {
+   "status": "added",
+   "type": "Launcher.Properties.Settings",
+   "name": "get_Default"
+  },
+  {
+   "status": "unchanged",
+   "type": "Launcher.Properties.Settings",
+   "name": "a"
+  },
+  {
+   "status": "unchanged",
+   "type": "Launcher.Properties.Resources",
+   "name": "a"
+  },
+  {
+   "status": "unchanged",
+   "type": "Launcher.Properties.Resources",
+   "name": "b"
+  },
+  {
+   "status": "removed",
+   "type": "DotfuscatorAttribute",
+   "name": "a"
+  },
+  {
+   "status": "removed",
+   "type": "DotfuscatorAttribute",
+   "name": "c"
+  }
+ ]
+}

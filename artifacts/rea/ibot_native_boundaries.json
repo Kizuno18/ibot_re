@@ -1,0 +1,706 @@
+{
+ "artifact_sha256": "9ca167aab8559e519961b57540ac5f45d10e5d02dcdb49b3f77be78bf6c12f00",
+ "mvid": "958774e8-689d-4669-8f1c-709bcc76f233",
+ "summary": {
+  "module_ref_count": 13,
+  "pinvoke_import_count": 99,
+  "native_implementation_count": 1851,
+  "ready_to_run": false,
+  "mixed_mode_or_native_header": false
+ },
+ "pinvoke": [
+  {
+   "scope": "user32.dll",
+   "import": "SetWindowsHookEx",
+   "managed_member": "HCU=",
+   "charset": "auto",
+   "cc": "stdcall"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "UnhookWindowsHookEx",
+   "managed_member": "ISU=",
+   "charset": "auto",
+   "cc": "stdcall"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "CallNextHookEx",
+   "managed_member": "IyU=",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetModuleHandle",
+   "managed_member": "KCU=",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetModuleHandle",
+   "managed_member": "GetModuleHandle",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SetWindowsHookEx",
+   "managed_member": "SetWindowsHookEx",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "UnhookWindowsHookEx",
+   "managed_member": "UnhookWindowsHookEx",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "CallNextHookEx",
+   "managed_member": "CallNextHookEx",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetKeyState",
+   "managed_member": "GetKeyState",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "dwmapi.dll",
+   "import": "DwmExtendFrameIntoClientArea",
+   "managed_member": "DwmExtendFrameIntoClientArea",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "ibotlib.dll",
+   "import": "getHardwareID",
+   "managed_member": "getHardwareID",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "CreateFontIndirect",
+   "managed_member": "CreateFontIndirect",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "RedrawWindow",
+   "managed_member": "RedrawWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "GetDeviceCaps",
+   "managed_member": "GetDeviceCaps",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "Rectangle",
+   "managed_member": "Rectangle",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "CreateSolidBrush",
+   "managed_member": "CreateSolidBrush",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SetDCPenColor",
+   "managed_member": "SetDCPenColor",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SetDCBrushColor",
+   "managed_member": "SetDCBrushColor",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SelectObject",
+   "managed_member": "SelectObject",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "GetStockObject",
+   "managed_member": "GetStockObject",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SetBkMode",
+   "managed_member": "SetBkMode",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "TextOut",
+   "managed_member": "TextOut",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "CreateRectRgn",
+   "managed_member": "CreateRectRgn",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "InvertRgn",
+   "managed_member": "InvertRgn",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "DeleteObject",
+   "managed_member": "DeleteObject",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SetTextColor",
+   "managed_member": "SetTextColor",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "CreatePen",
+   "managed_member": "CreatePen",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "CreateFont",
+   "managed_member": "CreateFont",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "gdi32.dll",
+   "import": "SetMapMode",
+   "managed_member": "SetMapMode",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "CreateWindowExW",
+   "managed_member": "CreateWindowExW",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "FillRect",
+   "managed_member": "FillRect",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "DefWindowProcW",
+   "managed_member": "DefWindowProcW",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "DestroyWindow",
+   "managed_member": "DestroyWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "RegisterClassW",
+   "managed_member": "RegisterClassW",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetClientRect",
+   "managed_member": "GetClientRect",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "BeginPaint",
+   "managed_member": "BeginPaint",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "EndPaint",
+   "managed_member": "EndPaint",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SetWindowRgn",
+   "managed_member": "SetWindowRgn",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SetLayeredWindowAttributes",
+   "managed_member": "SetLayeredWindowAttributes",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "ShowWindow",
+   "managed_member": "ShowWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "UpdateWindow",
+   "managed_member": "UpdateWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "MulDiv",
+   "managed_member": "MulDiv",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "GetDC",
+   "managed_member": "GetDC",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "InvalidateRect",
+   "managed_member": "InvalidateRect",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "ReleaseDC",
+   "managed_member": "ReleaseDC",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetForegroundWindow",
+   "managed_member": "GetForegroundWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetActiveWindow",
+   "managed_member": "GetActiveWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetFocus",
+   "managed_member": "GetFocus",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "DrawText",
+   "managed_member": "DrawText",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "keybd_event",
+   "managed_member": "keybd_event",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetKeyState",
+   "managed_member": "GetKeyState",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "GetAsyncKeyState",
+   "managed_member": "GetAsyncKeyState",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "VirtualProtectEx",
+   "managed_member": "VirtualProtectEx",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetWindowPlacement",
+   "managed_member": "GetWindowPlacement",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32",
+   "import": "SetWindowLong",
+   "managed_member": "SetWindowLong",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32",
+   "import": "GetWindowLong",
+   "managed_member": "GetWindowLong",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "mouse_event",
+   "managed_member": "mouse_event",
+   "charset": "auto",
+   "cc": "stdcall"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "SendInput",
+   "managed_member": "SendInput",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "USER32.DLL",
+   "import": "SetForegroundWindow",
+   "managed_member": "SetForegroundWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32",
+   "import": "SetFocus",
+   "managed_member": "SetFocus",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SetActiveWindow",
+   "managed_member": "SetActiveWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SwitchToThisWindow",
+   "managed_member": "SwitchToThisWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "IsWindowVisible",
+   "managed_member": "IsWindowVisible",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetWindow",
+   "managed_member": "GetWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "FindWindow",
+   "managed_member": "FindWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetWindowLong",
+   "managed_member": "GetWindowLongPtr",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetClassName",
+   "managed_member": "GetClassName",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "ReadProcessMemory",
+   "managed_member": "ReadProcessMemory",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "WriteProcessMemory",
+   "managed_member": "WriteProcessMemory",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "keybd_event",
+   "managed_member": "keybd_event",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SendMessage",
+   "managed_member": "SendMessage",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "PostMessage",
+   "managed_member": "PostMessage",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetWindowRect",
+   "managed_member": "GetWindowRect",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "FlashWindow",
+   "managed_member": "FlashWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "SetCursorPos",
+   "managed_member": "SetCursorPos",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetCursorPos",
+   "managed_member": "GetCursorPos",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetWindowRect",
+   "managed_member": "GetWindowRect",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "WindowFromPoint",
+   "managed_member": "WindowFromPoint",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "ClientToScreen",
+   "managed_member": "ClientToScreen",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "GetDesktopWindow",
+   "managed_member": "GetDesktopWindow",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "ShowWindowAsync",
+   "managed_member": "ShowWindowAsync",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "UnhookWindowsHookEx",
+   "managed_member": "UnhookWindowsHookEx",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "user32.dll",
+   "import": "CallNextHookEx",
+   "managed_member": "CallNextHookEx",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetModuleHandle",
+   "managed_member": "GetModuleHandle",
+   "charset": "auto",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetNativeSystemInfo",
+   "managed_member": "Jyk=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetSystemInfo",
+   "managed_member": "KSk=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "Imm32.dll",
+   "import": "ImmGetContext",
+   "managed_member": "ISw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "Imm32.dll",
+   "import": "ImmAssociateContext",
+   "managed_member": "Iyw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "CreateCaret",
+   "managed_member": "USw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "SetCaretPos",
+   "managed_member": "Viw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "DestroyCaret",
+   "managed_member": "WSw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "ShowCaret",
+   "managed_member": "Wiw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "User32.dll",
+   "import": "HideCaret",
+   "managed_member": "XCw=",
+   "charset": "not-specified",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "LoadLibraryA",
+   "managed_member": "LoadLibraryA",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "kernel32.dll",
+   "import": "GetProcAddress",
+   "managed_member": "GetProcAddress",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "AgileDotNetRT.dll",
+   "import": "_Initialize",
+   "managed_member": "_Initialize",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "AgileDotNetRT64.dll",
+   "import": "_Initialize64",
+   "managed_member": "_Initialize64",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "AgileDotNetRT.dll",
+   "import": "_AtExit",
+   "managed_member": "_AtExit",
+   "charset": "ansi",
+   "cc": "winapi"
+  },
+  {
+   "scope": "AgileDotNetRT64.dll",
+   "import": "_AtExit",
+   "managed_member": "_AtExit64",
+   "charset": "ansi",
+   "cc": "winapi"
+  }
+ ]
+}
