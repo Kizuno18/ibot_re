@@ -72,6 +72,7 @@ cavebot, targeting) are documented from static metadata.
 | [13-type-model](docs/13-type-model.md) | Declared types/members |
 | [14-client-1076-offsets](docs/14-client-1076-offsets.md) | Client memory map |
 | [15-rea-analysis](docs/15-rea-analysis.md) | REA 6.7.0 managed/native boundary analysis |
+| [history](docs/history.md) | Wayback timeline |
 
 ## Tools
 
