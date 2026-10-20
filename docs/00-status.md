@@ -13,10 +13,15 @@
 ## Open items / environment limits
 
 - Vendor auth host (`tibiaibot.com`) is offline; runtime ends at the Login window. Healer/cavebot/targeting are documented from static metadata.
-- Wine Program Error under Mono/.NET Client Profile: fixed later with full .NET 4.
+- Wine Program Error resolved: with native .NET 4 (winetricks `dotnet40`) iBot reaches its Login/HWID window ([10](10-runtime.md)).
 - **GUI login automation**: DirectDraw menu clicks unreliable under Xvfb; client reaches main menu; Enter Game dialog not driven end-to-end in this session.
 
+- Added: [13 type model](13-type-model.md), [14 client 10.76 memory map](14-client-1076-offsets.md), auth signatures in [05](05-auth-protocol.md).
+- Static limit: Agile.NET encrypts method bodies, so logic (healer/cavebot algorithms, offsets inside iBot) is not recoverable without running the protector, which is The session ends at the Authentication dialog (forum credentials required). Feature engines behind that dialog are documented from static metadata.
+
 ## Next (optional)
+
+- Log a character into local TFS and dump the battle list live to pin creature offsets past +0x24.
 
 - Deeper Agile.NET string decryption offline.
 - Map memory offsets used by `MemoryHelper` once strings decrypted.

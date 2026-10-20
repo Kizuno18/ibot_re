@@ -68,6 +68,8 @@ Under Wine the runtime reaches the Login window. Feature engines are documented 
 | [09-client-patch](docs/09-client-patch.md) | IP/RSA patch for 10.76 |
 | [10-runtime](docs/10-runtime.md) | Wine attempts & blockers |
 | [11-ibotplus](docs/11-ibotplus.md) | Qt packed companion |
+| [13-type-model](docs/13-type-model.md) | Declared types/members |
+| [14-client-1076-offsets](docs/14-client-1076-offsets.md) | Client memory map |
 
 ## Tools
 
