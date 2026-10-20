@@ -8,4 +8,4 @@
 | ibotlib.dll | — | inside zip | — | 8630fcc03625cb383ec3c88ed57e23d51d87a90339d2700a615f021f53b5ca3d | Exports getHardwareID |
 | Tibia1076.exe | Client 10.76 | https://downloads.ots.me/data/tibia-clients/windows/exe/Tibia1076.exe | 2026-10-20 | 5d3579a6b6caf7bcde46e021eb5bf79dce1fab22c74e7be46813ee69e4d06322 | CipSoft installer via ots.me archive |
 
-License/auth endpoints are documented from static metadata.
+License/auth endpoints are documented from static metadata (see [05](05-auth-protocol.md)).

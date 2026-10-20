@@ -22,4 +22,4 @@
 3. It gets back a string token/status. `LoginX(value)` returns a bool for a later session or keep-alive check.
 4. `Login6`/`Login7` are older variants kept for compatibility.
 
-The server is dead (tibiaibot.com is offline), so none of this was exercised live.
+The vendor host (`tibiaibot.com`) is offline; the flow was not exercised live.

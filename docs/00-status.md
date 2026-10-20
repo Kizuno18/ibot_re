@@ -8,21 +8,19 @@
 - RSA+IP patched client (`Tibia_ot.exe`); TCP probe to `:7171` receives protocol greeting.
 - Headless ILSpy (`ilspycmd`) decompilation of `iBot.exe` / `Launcher.exe` / Lua assemblies (obfuscated identifiers retained).
 - Documented WinAPI P/Invoke surface, SOAP auth endpoints, HWID export, namespaces.
-- Isolated Wine prefix prepared; .NET 4 Client Profile present.
+- Isolated Wine prefix prepared; .NET Framework 4 present.
+- Wine Program Error resolved: with native .NET 4 (winetricks `dotnet40`) iBot reaches its Login/HWID window ([10](10-runtime.md)).
+- Added: [13 type model](13-type-model.md), [14 client 10.76 memory map](14-client-1076-offsets.md) (live-validated), auth signatures in [05](05-auth-protocol.md), [15 REA analysis](15-rea-analysis.md).
 
 ## Open items / environment limits
 
 - Vendor auth host (`tibiaibot.com`) is offline; runtime ends at the Login window. Healer/cavebot/targeting are documented from static metadata.
-- Wine Program Error resolved: with native .NET 4 (winetricks `dotnet40`) iBot reaches its Login/HWID window ([10](10-runtime.md)).
-- **GUI login automation**: DirectDraw menu clicks unreliable under Xvfb; client reaches main menu; Enter Game dialog not driven end-to-end in this session.
-
-- Added: [13 type model](13-type-model.md), [14 client 10.76 memory map](14-client-1076-offsets.md), auth signatures in [05](05-auth-protocol.md).
-- Static limit: Agile.NET encrypts method bodies, so logic (healer/cavebot algorithms, offsets inside iBot) is not recoverable without running the protector, which is The session ends at the Authentication dialog (forum credentials required). Feature engines behind that dialog are documented from static metadata.
+- Agile.NET encrypts method bodies; method logic (healer/cavebot algorithms, internal offsets) is not present as IL in the file and was not recovered.
+- Early Xvfb sessions had unreliable DirectDraw menu clicks; later sessions completed Enter Game via corrected coordinates.
 
 ## Next (optional)
 
-- Log a character into local TFS and dump the battle list live to pin creature offsets past +0x24.
-
+- Finish skull/party/war-icon and HP%-decrease live checks outside the PZ.
 - Deeper Agile.NET string decryption offline.
-- Map memory offsets used by `MemoryHelper` once strings decrypted.
+- Map memory offsets used by `MemoryHelper` once strings are decrypted.
 - Compare iBot Plus 10.76 packed Qt binary with WindBot lineage.

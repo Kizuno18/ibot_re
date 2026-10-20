@@ -17,22 +17,22 @@ mscoree.dll -> mscoreei.dll -> clr.dll -> clrjit.dll
            -> C:\iBot\ibotlib.dll         (getHardwareID)
 ```
 (`WINEDEBUG=+loaddll,+seh`). The only first-chance exception seen was `RPC_S_SERVER_UNAVAILABLE (0x6ba)`,
-which is harmless COM noise. 
+which is harmless COM noise.
 
 ## Result
-`iBot.exe` now reaches its **Login** window (322×145):
+`iBot.exe` reaches its **Login** window (322×145):
 
 | Control | Notes |
 |---|---|
 | E-mail | Forum/licence account |
 | Password | — |
-| Hardware id | Shown as `XXXX-XXXX` (8 chars, from `ibotlib!getHardwareID`, volume-serial based). The value for this box is not published |
+| Hardware id | Shown as `XXXX-XXXX` (8 chars, from `ibotlib!getHardwareID`, volume-serial based) |
 | Auto-login | checkbox |
 | Login / Exit | — |
 
-***REMOVED***
-***REMOVED***
-The vendor auth host is offline, so the session ends at this dialog. Feature engines (healer, cavebot, targeting) are documented from static metadata.
+The vendor auth host is offline, so the session ends at this dialog. Feature engines
+(healer, cavebot, targeting) are documented from static metadata.
 
 ## Client
-The patched 10.76 client reaches its main menu under Wine. A TCP probe to local TFS 1.1 gets the protocol banner.
+The patched 10.76 client reaches its main menu under Wine and, with corrected click
+coordinates, logs into local TFS 1.1 (MOTD → character list → in game).

@@ -8,8 +8,8 @@
 drives the Tibia client primarily via user-input simulation and selective process
 memory reads — historically marketed as safer than injectors. This repo is a
 research corpus: hashes, decompilation notes, protocol/auth observations, and
-***REMOVED***
-***REMOVED***
+client-patch tooling. Vendor binaries are referenced by SHA256 and archive links
+only; they are not checked into the tree.
 
 ## Scope
 
@@ -33,7 +33,7 @@ Launcher.exe  --renames-->  <random7>.exe  (Dotfuscated stub)
               |               |                |
          ibotlib.dll     Lua stack         Win32 P/Invoke
        getHardwareID    Lua.Secure.dll      user32/gdi32
-       (HWID gate)      lua51.dll           Read/WriteProcessMemory
+       (HWID)           lua51.dll           Read/WriteProcessMemory
                               |             SendInput / mouse_event
                               v
                     SOAP login @ tibiaibot.com
@@ -42,21 +42,22 @@ Launcher.exe  --renames-->  <random7>.exe  (Dotfuscated stub)
 
 ## License / auth
 
-Official builds require an active license and talk to:
+Official builds talk to:
 
 - `http://www.tibiaibot.com/service/aut.php`
 - `http://www.tibiaibot.com/Login6`, `Login6a`, `LoginX`
 - WCF-style contracts `urn:ibot.login6`, `urn:ibot.login7`, `urn:ibot.loginX`
 - Native `ibotlib.dll!getHardwareID` (volume serial / machine binding)
 
-***REMOVED***
-Under Wine the runtime reaches the Login window. Feature engines are documented from static metadata.
+Under Wine the runtime reaches the Login window (e-mail / password / Hardware id).
+The vendor auth host is offline, so sessions end there. Feature engines (healer,
+cavebot, targeting) are documented from static metadata.
 
 ## Documentation map
 
 | Doc | Topic |
 | --- | --- |
-| [00-status](docs/00-status.md) | Done / blocked / next |
+| [00-status](docs/00-status.md) | Done / open items |
 | [01-provenance](docs/01-provenance.md) | Download URLs, SHA256, dates |
 | [02-overview](docs/02-overview.md) | Product history & design claims |
 | [03-static-analysis](docs/03-static-analysis.md) | PE / .NET / packers |
@@ -66,7 +67,7 @@ Under Wine the runtime reaches the Login window. Feature engines are documented 
 | [07-game-model](docs/07-game-model.md) | Decompiled namespaces |
 | [08-scripting](docs/08-scripting.md) | Lua / library scripts |
 | [09-client-patch](docs/09-client-patch.md) | IP/RSA patch for 10.76 |
-| [10-runtime](docs/10-runtime.md) | Wine attempts & blockers |
+| [10-runtime](docs/10-runtime.md) | Wine session notes |
 | [11-ibotplus](docs/11-ibotplus.md) | Qt packed companion |
 | [13-type-model](docs/13-type-model.md) | Declared types/members |
 | [14-client-1076-offsets](docs/14-client-1076-offsets.md) | Client memory map |
@@ -76,9 +77,5 @@ Under Wine the runtime reaches the Login window. Feature engines are documented 
 
 - `tools/pe_recon.py` — PE triage
 - `tools/patch_client.py` — hostname + RSA modulus patcher (local copies only)
-
-## Notes
-
-- Binaries stay out of git; only hashes and archive links.
-***REMOVED***
-***REMOVED***
+- `tools/verify_offsets_1076.py` — static cross-check of the 10.76 address set
+- `tools/read_1076.py` — read-only `/proc/<pid>/mem` reader for a live client
