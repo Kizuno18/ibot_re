@@ -1,0 +1,50 @@
+# /workspace/re/ibot/iBot_v2_7_2/iBot/iBot.exe
+sha256 9ca167aab8559e519961b57540ac5f45d10e5d02dcdb49b3f77be78bf6c12f00  size 1943040
+timestamp 2015-03-03 22:24:49Z  ImageBase 0x400000 EP 0x1da6da subsys 2
+CLR header: True
+  .text      va 0x0002000 vsz 0x01d875c raw 0x01d8800 ent 6.98
+  .rsrc      va 0x01dc000 vsz 0x0001890 raw 0x0001a00 ent 6.18
+  .reloc     va 0x01de000 vsz 0x000000c raw 0x0000200 ent 0.10
+  IMPORT mscoree.dll (1): _CorExeMain
+
+# /workspace/re/ibot/iBot_v2_7_2/iBot/Launcher.exe
+sha256 ffc6eded61bc19fa84b8bdef0b413ded2640332ce4925fdf336299cf7270b7d3  size 13312
+timestamp 2012-05-29 04:49:47Z  ImageBase 0x400000 EP 0x324e subsys 2
+CLR header: True
+  .text      va 0x0002000 vsz 0x0001254 raw 0x0001400 ent 5.05
+  .rsrc      va 0x0004000 vsz 0x0001b40 raw 0x0001c00 ent 6.35
+  .reloc     va 0x0006000 vsz 0x000000c raw 0x0000200 ent 0.08
+  IMPORT mscoree.dll (1): _CorExeMain
+
+# /workspace/re/ibot/iBot_v2_7_2/iBot/ibotlib.dll
+sha256 8630fcc03625cb383ec3c88ed57e23d51d87a90339d2700a615f021f53b5ca3d  size 19456
+timestamp 2014-05-22 13:00:05Z  ImageBase 0x10000000 EP 0x2f38 subsys 2
+CLR header: False
+  .text      va 0x0001000 vsz 0x000276e raw 0x0002800 ent 6.32
+  .rdata     va 0x0004000 vsz 0x00014dc raw 0x0001600 ent 4.82
+  .data      va 0x0006000 vsz 0x0000544 raw 0x0000200 ent 4.46
+  .rsrc      va 0x0007000 vsz 0x00001b4 raw 0x0000200 ent 5.11
+  .reloc     va 0x0008000 vsz 0x000046c raw 0x0000600 ent 4.63
+  IMPORT KERNEL32.dll (16): GetVolumeInformationW, GetSystemTimeAsFileTime, GetCurrentProcessId, GetCurrentThreadId, GetTickCount, QueryPerformanceCounter, IsDebuggerPresent, SetUnhandledExceptionFilter, UnhandledExceptionFilter, GetCurrentProcess, TerminateProcess, InterlockedCompareExchange, Sleep, InterlockedExchange, DecodePointer, EncodePointer
+  IMPORT MSVCR100.dll (28): _except_handler4_common, _onexit, _lock, __dllonexit, _unlock, __clean_type_info_names_internal, ?_type_info_dtor_internal_method@type_info@@QAEXXZ, ?terminate@@YAXXZ, _crt_debugger_hook, __CppXcptFilter, _amsg_exit, _initterm_e, _initterm, _encoded_null, free, _malloc_crt, ?what@exception@std@@UBEPBDXZ, strcpy_s, tolower, ??2@YAPAXI@Z, ??0exception@std@@QAE@ABV01@@Z, memmove, ??3@YAXPAX@Z, ??1exception@std@@UAE@XZ, ??0exception@std@@QAE@ABQBD@Z, __CxxFrameHandler3, memcpy, _CxxThrowException
+  IMPORT MSVCP100.dll (26): ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ, ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEXXZ, ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEXXZ, ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JXZ, ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ, ?_Xout_of_range@std@@YAXPBD@Z, ?_BADOFF@std@@3_JB, ??_7?$basic_ostream@DU?$char_traits@D@std@@@std@@6B@, ?uncaught_exception@std@@YA_NXZ, ?_Xlength_error@std@@YAXPBD@Z, ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ, ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAE@XZ, ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z, ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ, ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ, ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z, ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ, ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z, ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ, ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z, ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ, ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z, ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ, ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PAD_J@Z, ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPBD_J@Z, ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPAD_J@Z
+  EXPORTS (1): getHardwareID
+
+# /workspace/re/ibot/iBot_v2_7_2/iBot/AgileDotNetRT.dll
+sha256 6e7631ea456e3ea7e02119c115f4838402130469c938312bfa397cad1bfe29fd  size 123074
+timestamp 2014-04-23 17:49:55Z  ImageBase 0x10000000 EP 0x11415 subsys 2
+CLR header: False
+  .textbss   va 0x0001000 vsz 0x0010000 raw 0x0000000 ent 0.00
+  .text      va 0x0011000 vsz 0x00100a6 raw 0x0010200 ent 5.43
+  .rdata     va 0x0022000 vsz 0x00016c6 raw 0x0001800 ent 4.39
+  .data      va 0x0024000 vsz 0x00006c8 raw 0x0000200 ent 0.48
+  .idata     va 0x0025000 vsz 0x0000bf1 raw 0x0000c00 ent 4.32
+  .didat     va 0x0026000 vsz 0x0000361 raw 0x0000400 ent 0.79
+  .rsrc      va 0x0027000 vsz 0x0000400 raw 0x0000400 ent 4.25
+  .reloc     va 0x0028000 vsz 0x000acc2 raw 0x000acc2 ent 7.42
+  IMPORT VERSION.dll (3): GetFileVersionInfoSizeW, GetFileVersionInfoW, VerQueryValueA
+  IMPORT PSAPI.DLL (5): GetModuleInformation, EnumProcesses, GetModuleFileNameExA, EnumProcessModules, GetModuleBaseNameA
+  IMPORT KERNEL32.dll (72): SetThreadContext, LocalAlloc, lstrcatW, CompareStringW, lstrcmpW, lstrcmpiW, lstrcatA, lstrlenA, lstrcpyA, GetVersionExW, VirtualProtect, FreeLibrary, GetProcAddress, LoadLibraryW, HeapFree, HeapAlloc, GetProcessHeap, ReadProcessMemory, CloseHandle, CreateFileA, OpenProcess, SetEvent, VirtualFree, VirtualAlloc, GetSystemInfo, CreateThread, GetCurrentThreadId, CreateEventW, QueryPerformanceCounter, QueryPerformanceFrequency, GetTickCount, Sleep, InterlockedCompareExchange, LoadLibraryA, InitializeCriticalSection, LocalFree, FormatMessageW, RaiseException, WaitForSingleObject, OpenThread ...
+  IMPORT USER32.dll (1): MessageBoxW
+  EXPORTS (3): _1, _AtExit, _Initialize
+
