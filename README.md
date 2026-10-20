@@ -97,7 +97,6 @@ Number 12 is unused.
 | --- | --- |
 | `docs/` | Research chapters; `docs/shared/` is mirrored in windbot_re |
 | `artifacts/` | Text dumps of fictional test entities |
-| `scripts/` | Environment helpers |
 | `tools/pe_recon.py` | PE triage |
 | `tools/patch_client.py` | Hostname + RSA modulus patcher (local copies only) |
 | `tools/verify_offsets_1076.py` | Static cross-check of the 10.76 address set |
