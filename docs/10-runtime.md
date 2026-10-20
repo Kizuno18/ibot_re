@@ -1,20 +1,38 @@
-# Runtime notes
+# Runtime notes (Wine)
 
 ## Environment
+- Isolated prefix `/workspace/wine/ibot` (win32), Xvfb `:99`, `scrot`.
+- VC++ 2010 x86 redist; **.NET Framework 4 (winetricks `dotnet40`)**; Wine Mono was tried first.
+- 32-bit `libGL.so.1` (i386 Mesa) required for the 10.76 client.
 
-- Wine win32 prefix `/workspace/wine/ibot`
-- Xvfb `:99` + `scrot`
-- VC++ 2010 redist + .NET 4 Client Profile (winetricks/msiexec)
-- Wine Mono MSI also attempted
+## "Program Error" — root cause
+The earlier crash happened while the prefix only had Wine Mono plus a half-installed
+.NET 4 Client Profile. Under Mono the Agile.NET native runtime (`AgileDotNetRT.dll!_Initialize`)
+could not hook the CLR, and Wine popped `winedbg` up as "Program Error". Once winetricks
+`dotnet40` had finished (native `clr.dll` v4.0.30319), the load chain worked:
+
+```
+mscoree.dll -> mscoreei.dll -> clr.dll -> clrjit.dll
+           -> C:\iBot\AgileDotNetRT.dll   (Agile.NET runtime, native)
+           -> C:\iBot\ibotlib.dll         (getHardwareID)
+```
+(`WINEDEBUG=+loaddll,+seh`). The only first-chance exception seen was `RPC_S_SERVER_UNAVAILABLE (0x6ba)`,
+which is harmless COM noise. 
+
+## Result
+`iBot.exe` now reaches its **Login** window (322×145):
+
+| Control | Notes |
+|---|---|
+| E-mail | Forum/licence account |
+| Password | — |
+| Hardware id | Shown as `XXXX-XXXX` (8 chars, from `ibotlib!getHardwareID`, volume-serial based). The value for this box is not published |
+| Auto-login | checkbox |
+| Login / Exit | — |
+
+***REMOVED***
+***REMOVED***
+The vendor auth host is offline, so the session ends at this dialog. Feature engines (healer, cavebot, targeting) are documented from static metadata.
 
 ## Client
-
-Patched `Tibia.exe` reaches the classic main menu under Wine once `libGL.so.1` **i386** is installed. OpenGL initially failed with amd64-only libGL.
-
-## Bot
-
-`iBot.exe` initially failed with Wine `Program Error` / `winedbg` after CLR load — consistent with Agile.NET native callbacks (later fixed with native .NET 4).
-
-## OT server
-
-TFS 1.1 listening on `0.0.0.0:7171` / `7172`; account file local only (not committed).
+The patched 10.76 client reaches its main menu under Wine. A TCP probe to local TFS 1.1 gets the protocol banner.
