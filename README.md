@@ -6,7 +6,7 @@
 
 `ibot_re` documents **iBot** (Jonatas / tibiaibot.com), a .NET external bot that
 drives the Tibia client primarily via user-input simulation and selective process
-memory reads — historically marketed as safer than injectors. This repo is a
+memory reads, historically marketed as safer than injectors. This repo is a
 research corpus: hashes, decompilation notes, protocol/auth observations, and
 client-patch tooling. Vendor binaries are referenced by SHA256 and archive links
 only; they are not checked into the tree.
@@ -72,11 +72,12 @@ cavebot, targeting) are documented from static metadata.
 | [13-type-model](docs/13-type-model.md) | Declared types/members |
 | [14-client-1076-offsets](docs/14-client-1076-offsets.md) | Client memory map |
 | [15-rea-analysis](docs/15-rea-analysis.md) | REA 6.7.0 managed/native boundary analysis |
-| [history](docs/history.md) | Wayback timeline |
+| [history](docs/history.md) | Product timeline, pricing, end of support (Wayback) |
+| [shared/client-1076-memory-map](docs/shared/client-1076-memory-map.md) | Consolidated 10.76 player + battle-list map (shared with the sibling repo) |
 
 ## Tools
 
-- `tools/pe_recon.py` — PE triage
-- `tools/patch_client.py` — hostname + RSA modulus patcher (local copies only)
-- `tools/verify_offsets_1076.py` — static cross-check of the 10.76 address set
-- `tools/read_1076.py` — read-only `/proc/<pid>/mem` reader for a live client
+- `tools/pe_recon.py` : PE triage
+- `tools/patch_client.py` : hostname + RSA modulus patcher (local copies only)
+- `tools/verify_offsets_1076.py`: static cross-check of the 10.76 address set
+- `tools/read_1076.py`: read-only `/proc/<pid>/mem` reader for a live client

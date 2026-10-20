@@ -1,5 +1,7 @@
 # Tibia 10.76 memory map (what external bots read)
 
+> Consolidated reference map: [shared/client-1076-memory-map.md](shared/client-1076-memory-map.md). This page keeps the sources and live validation logs.
+
 Client: CipSoft Tibia **10.76**, `Tibia.exe` SHA256 `1b47ab0e…efffcb`, ImageBase `0x400000`.
 The PE has `DYNAMIC_BASE` set and a reloc directory (DllCharacteristics `0x8140`). Classic bots
 use these as absolute VAs, which only holds if ASLR maps the image at its preferred base, as Wine and most 2015-era setups did.
